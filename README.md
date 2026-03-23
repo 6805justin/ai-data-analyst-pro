@@ -26,27 +26,6 @@ SQLite (Data storage)
 OpenAI API (AI-powered insights)
 Matplotlib / Seaborn (Visualizations)
 
-Project Structure
-ai-data-analyst-pro/
-│
-├── app.py
-├── pages/
-│   ├── 1_Upload.py
-│   ├── 2_EDA.py
-│   ├── 3_Clean_and_Merge.py
-│   ├── 4_Ask_Data.py
-│   └── 5_Export.py
-│
-├── utils/
-│   ├── cleaning.py
-│   ├── eda.py
-│   ├── llm.py
-│   └── merge.py
-│
-├── data.db
-└── requirements.txt
-
-
 Clone the repository and run locally:
 
 git clone https://github.com/your-username/ai-data-analyst-pro.git  
