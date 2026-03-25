@@ -3,18 +3,12 @@ import streamlit as st
 def initialize_session_state():
     if "datasets" not in st.session_state:
         st.session_state.datasets = {}
+
     if "active_table" not in st.session_state:
         st.session_state.active_table = None
-        import streamlit as st
 
-def init_session_state():
-    defaults = {
-        "datasets": {},
-        "active_table": None,
-        "cleaned_data": None,
-        "merged_data": None,
-    }
+    if "cleaned_data" not in st.session_state:
+        st.session_state.cleaned_data = None
 
-    for key, value in defaults.items():
-        if key not in st.session_state:
-            st.session_state[key] = value
+    if "merged_data" not in st.session_state:
+        st.session_state.merged_data = None
