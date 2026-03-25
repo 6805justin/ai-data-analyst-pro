@@ -1,7 +1,9 @@
 import streamlit as st
 from utils.state import initialize_session_state
 from utils.ui import apply_theme, render_sidebar, initialize_ui_state
+from utils.state import init_session_state
 
+init_session_state()
 st.set_page_config(
     page_title="AI Data Analyst Pro",
     page_icon="📊",

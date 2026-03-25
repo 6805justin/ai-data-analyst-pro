@@ -6,6 +6,12 @@ from utils.ui import apply_theme, render_sidebar
 apply_theme()
 render_sidebar()
 
+if "datasets" not in st.session_state:
+    st.session_state.datasets = {}
+
+if "active_table" not in st.session_state:
+    st.session_state.active_table = None
+
 st.title("Upload and Preview")
 
 uploaded_file = st.file_uploader("Upload CSV", type=["csv"])
